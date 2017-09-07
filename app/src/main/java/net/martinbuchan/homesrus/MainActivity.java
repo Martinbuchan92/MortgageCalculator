@@ -78,6 +78,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+
+    /**
+     * Populates the ArrayList 'yearList'
+     */
         public void populateYearSpinner() {
             ArrayList<Integer> yearList = new ArrayList<>();
 
