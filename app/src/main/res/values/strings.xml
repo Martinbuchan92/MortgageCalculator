@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Homes R Us</string>
+    <string name="interest_rate">Choose a rate</string>
+    <string name="loan_amount">Enter loan amount</string>
+    <string name="first_time">First time buyer</string>
+    <string name="year_prompt">Select loan length</string>
+    <string name="reserve">Reserve</string>
+    <string name="active_service">Active Service</string>
+    <string name="veteran">Veteran</string>
+    <string name="none">None</string>
+    <string name="annual_interest">Annual Interest %</string>
+    <string name="repayment_years">Repayment years</string>
+    <string name="conf_irm">Confirm</string>
+    <string name="clear">Reset</string>
+    <string name="enter_loan_amount">Enter loan amount:</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="total_payment">Total Payment</string>
+    <string name="total_interest">Total Interest</string>
+    <string name="rate_used">Rate Used</string>
+    <string name="back">Back</string>
+
+    <string-array name="offers">
+        <item>Insurance - O</item>
+        <item>One payment grace - F</item>
+        <item>2-day late payment - F</item>
+        <item>Face to face transactions -S</item>
+        <item>Frequent borrower benefits -F</item>
+        <item>Saturday visits -S</item>
+        <item>Hotel discount -O</item>
+        <item>Face to face consultations -S</item>
+        <item>Phone reminders - S</item>
+        <item>Online reversals -F</item>
+        <item>GST waiver -F</item>
+    </string-array>
+
+
+</resources>
