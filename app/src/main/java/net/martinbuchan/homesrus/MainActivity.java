@@ -20,6 +20,12 @@ import org.apache.poi.ss.formula.functions.FinanceLib;
 
 import java.util.ArrayList;
 
+/**
+ * @author Martin Buchan
+ * Runs main activities in main_form, including running calculations.
+ *
+ * Imports org.apache.poi for the PMT equation.
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     final double FIRST_HOME_DISCOUNT = 1.0;
     final double VET_DISCOUNT = 0.75;
@@ -120,6 +126,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     *Calculates the values that are to be applied
+     */
     public void calculate() {
         discount = 0;
         extraServices = 0;
@@ -129,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         years = (double) ((int) spnYears.getSelectedItem());
         double rate = (double) spnRate.getSelectedItem();
 
-        //Check if first time buyer
+        //Check if first time buyer and apply discount
         CheckBox cbFirstTimeBuyer = (CheckBox) findViewById(R.id.chbFirstTime);
         if (cbFirstTimeBuyer.isChecked()) {
             discount += FIRST_HOME_DISCOUNT;
@@ -181,6 +190,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * Resets all inputs to allow a new input to be put in.
+     */
     public void reset() {
         ViewGroup container = (ViewGroup) findViewById(R.id.linearLayout2);
         for (int i = 0; i < container.getChildCount(); i++) {
@@ -199,8 +211,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Spinner mSpin2 = (Spinner) findViewById(R.id.spnRate);
         mSpin2.setSelection(0);
 
-        CheckBox chkbx = (CheckBox) findViewById(R.id.chbFirstTime);
-        chkbx.setChecked(false);
+        CheckBox cbFirstTimeBuyer = (CheckBox) findViewById(R.id.chbFirstTime);
+        cbFirstTimeBuyer.setChecked(false);
 
     }
 
