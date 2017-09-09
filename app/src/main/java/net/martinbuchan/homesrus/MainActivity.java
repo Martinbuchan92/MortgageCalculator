@@ -102,7 +102,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             spnYears.setAdapter(adapter);
         }
 
-
+    /**
+     * Populates a spinner with the interest rate options
+     */
     public void populateRateSpinner() {
         ArrayList<Double> rateList = new ArrayList<>();
         spnRate = (Spinner) findViewById(R.id.spnRate);
